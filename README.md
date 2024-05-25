@@ -36,3 +36,12 @@ AFTER INTERNAL_SERVER_ERROR 1715744138010
 
 Note: Error types should not contain any non-alphanumeric characters except underscores. Ensure there are no extra whitespaces.
 
+
+## Execution
+
+To run the program, execute the following command:
+
+   ```sh
+   python3 run.py
+   ```
+

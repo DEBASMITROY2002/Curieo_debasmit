@@ -45,3 +45,32 @@ To run the program, execute the following command:
    python3 run.py
    ```
 
+
+
+#### Time complexity
+If n is the total number of logs.
+
+1. Time complexity for inserting each log into our data structure is 𝑂 ( 1 ) (amortized).
+2. Time complexity for each query is 𝑂 ( log ⁡ 𝑛 ).
+
+
+#### Space complexity
+The order is : O(n)
+ 
+#### Data Structures Used 
+
+1. Prefix array for storing minimum, maximum, and summation  using python 1d list
+2. Monotonic stack for suffix min/max using python 1d list
+3. Map using python dictionary 
+
+ ### Logic
+
+1. Each log type is mapped to its associated log entry object using string-to-object mapping. Therefore, accessing log entries under each log type is done in  O(1)
+2. Each log entry object contains prefix-suffix utilities, total severities, and timestamps in increasing order of timestamps.
+3. Accessing timestamps using binary search requires  O(log n) time.
+4. Each query over the prefix array requires O(1) time.
+5. Each query over the Monotonic stack requires O(log n) using binary search.
+6. The insertion of n elements into the monotonic stack takes O(n) time , resulting in O(1) time per element (amortized).
+
+
+

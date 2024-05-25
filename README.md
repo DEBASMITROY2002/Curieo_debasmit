@@ -56,15 +56,17 @@ If n is the total number of logs.
 
 #### Space complexity
 The order is : O(n)
- 
+
+
+![Example Image1](pic1.png)
 #### Data Structures Used 
 
 1. Prefix array for storing minimum, maximum, and summation  using python 1d list
 2. Monotonic stack for suffix min/max using python 1d list
 3. Map using python dictionary 
 
+![Example Image2](pic2.png)
  ### Logic
-
 1. Each log type is mapped to its associated log entry object using string-to-object mapping. Therefore, accessing log entries under each log type is done in  O(1)
 2. Each log entry object contains prefix-suffix utilities, total severities, and timestamps in increasing order of timestamps.
 3. Accessing timestamps using binary search requires  O(log n) time.

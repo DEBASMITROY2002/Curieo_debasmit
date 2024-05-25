@@ -73,6 +73,7 @@ The order is : O(n)
 4. Each query over the prefix array requires O(1) time.
 5. Each query over the Monotonic stack requires O(log n) using binary search.
 6. The insertion of n elements into the monotonic stack takes O(n) time , resulting in O(1) time per element (amortized).
+7. The Suffix mean is calculated using:  (Total Sum - Prefix Sum + Current Element) / (n-index)
 
 
 

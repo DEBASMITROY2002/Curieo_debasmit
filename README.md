@@ -77,3 +77,28 @@ The order is : O(n)
 
 
 
+#### Generate Test Case
+
+```
+cd test
+python3 gen_testcase.py
+```
+
+Now the 'test/test_cases.txt' is generated.
+
+The brute-force logic is in the 'test/brute_force.py'. Running this will generate 'test/output_test.txt'. 
+
+We can use 'pytest' to validate the results.
+
+```
+pip install pytest
+```
+
+```
+python3 run.py test/test_cases.txt
+cd test
+python3 brute_force.py
+pytest test.py
+```
+
+
